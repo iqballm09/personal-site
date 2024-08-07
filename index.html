@@ -11,23 +11,29 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
   </head>
   <body>
     <section id="navbar">
-      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container-fluid">
           <div class="ms-3">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="30"
-              fill="currentColor"
-              class="bi bi-github"
-              viewBox="0 0 16 16"
-            >
-              <path
-                d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"
-              />
-            </svg>
+            <a href="#" style="color: #e3fdfd">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="28"
+                fill="currentColor"
+                class="bi bi-github"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"
+                />
+              </svg>
+            </a>
           </div>
           <button
             class="navbar-toggler me-3"
@@ -38,7 +44,13 @@
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span class="navbar-toggler-icon"></span>
+            <span class="" role="button"
+              ><i
+                class="fa fa-bars"
+                aria-hidden="true"
+                style="color: #e3fdfd"
+              ></i
+            ></span>
           </button>
           <div
             class="collapse navbar-collapse justify-content-start justify-content-lg-end"
@@ -75,9 +87,11 @@
           width="150"
           height="150"
         />
-        <h1 class="display-5 fw-bold text-light">Muhammad Iqbal</h1>
+        <h1 class="display-5 fw-bold" id="header-site-color">Muhammad Iqbal</h1>
         <div class="col-lg-6 mx-auto">
-          <p class="lead mb-4 text-light fs-3">Fullstack Developer</p>
+          <p class="lead mb-4 fs-3" id="header-site-color">
+            Fullstack Developer
+          </p>
           <div class="d-grid gap-3 mb-4 d-sm-flex justify-content-sm-center">
             <button type="button" class="btn btn-light btn-lg px-4 gap-3">
               <a href="https://github.com/iqballm09" target="_blank">
@@ -126,20 +140,20 @@
 
     <section id="quote">
       <div class="container my-5">
-        <div class="p-5 text-center bg-body-tertiary rounded-4">
+        <div class="p-5 text-center bg-body-secondary rounded-4">
           <blockquote class="blockquote">
             <p>
               <em
                 ><q>The only true wisdom is in knowing you know nothing.</q></em
               >
-              - <span>Socrates</span>
+              - <span style="color: brown">Socrates</span>
             </p>
           </blockquote>
         </div>
       </div>
     </section>
 
-    <section id="about-me" class="bg-body-tertiary">
+    <section id="about-me" class="bg-body-secondary">
       <div class="container col-xxl-8 px-4 py-5">
         <h2 class="pb-2 border-bottom">About Me</h2>
         <div class="row flex-lg-row-reverse align-items-start g-5 py-4">
@@ -153,14 +167,14 @@
             />
           </div>
           <div class="col-lg-7">
-            <p class="lead fs-6 text-justify">
+            <p class="lead fs-6 justify-text">
               Muhammad Iqbal was born in Bukittinggi on September 11, 1999. He
               is a learner who has a passion for learning new stuffs related to
               IT, ranging from Data Analytics, Machine Learning, Software
               Enginneering, to Blockchain Techology. Currently, he is focusing
               on Software Engineering and Blockchain field.
             </p>
-            <p class="lead fs-6">
+            <p class="lead fs-6 justify-text">
               He studied Computer Science at Institut Pertanian Bogor (IPB)
               starting on August 2019 and graduated with cum laude honors on
               November 2023. His thesis on the field of machine learning was
@@ -168,8 +182,11 @@
               Multispectral Drone Image Using Random Forest Algorithm". Before
               studying at IPB, he took a gap year for 1 year and relocated to
               Kampung Inggris Pare, Kediri, East Java for learning english and
-              preparing entrance exam. Besides coding, he has hobbies such as
-              playing game, reading manga and novels.
+              preparing entrance exam.
+            </p>
+            <p class="lead fs-6 justify-text">
+              Besides coding, he has hobbies such as playing game, reading manga
+              and novels.
             </p>
           </div>
         </div>
@@ -260,7 +277,7 @@
       </div>
     </section>
 
-    <section id="certifications" class="bg-body-tertiary">
+    <section id="certifications" class="bg-body-secondary">
       <div class="container px-4 py-5">
         <h2 class="pb-2 border-bottom mb-5">Certifications</h2>
         <table class="table">
@@ -333,54 +350,84 @@
       </div>
     </section>
 
-    <section id="projects" class="bg-body-tertiary">
+    <section id="projects">
       <div class="album">
         <div class="container px-4 py-5">
           <h2 class="pb-2 border-bottom">Projects</h2>
           <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 py-4">
-            <div class="col">
-              <div class="card shadow-sm">
-                <svg
-                  class="bd-placeholder-img card-img-top"
-                  width="100%"
+            <div class="col" id="insw-chain">
+              <div class="card shadow-sm bg-body-tertiary">
+                <img
+                  src="./assets/images/insw-chain.webp"
                   height="225"
-                  xmlns="http://www.w3.org/2000/svg"
-                  role="img"
-                  aria-label="Placeholder: Thumbnail"
-                  preserveAspectRatio="xMidYMid slice"
-                  focusable="false"
-                >
-                  <title>Placeholder</title>
-                  <rect width="100%" height="100%" fill="#55595c"></rect>
-                  <text x="50%" y="50%" fill="#eceeef" dy=".3em">
-                    Thumbnail
-                  </text>
-                </svg>
+                  alt="insw-chain"
+                />
                 <div class="card-body">
                   <h5>INSWChain</h5>
-                  <p class="card-text">
-                    This is a wider card with supporting text below as a natural
-                    lead-in to additional content. This content is a little bit
-                    longer.
+                  <p class="card-text justify-text">
+                    Research project on Web3 and Blockchain development for a
+                    Delivery Order case, in collaboration between IPB, LPDP, and
+                    LNSW.
                   </p>
                   <p class="card-text font-sm">
-                    Frameworks: Next.JS, Nest.JS, Hyperledger Fabric
+                    <span class="fw-bold">Role:</span>
+                    <span class="badge text-bg-success">
+                      Full Stack Developer
+                    </span>
+                    <span class="badge text-bg-success">
+                      Blockchain Developer
+                    </span>
                   </p>
-                  <div
-                    class="d-flex justify-content-between align-items-center"
-                  >
+                  <p class="card-text font-sm">
+                    <span class="fw-bold">Tech Stacks:</span>
+                    <span class="badge text-bg-info">NextJS</span>
+                    <span class="badge text-bg-info">NestJS</span>
+                    <span class="badge text-bg-info">PostgreSQL</span>
+                    <span class="badge text-bg-info">Hyperledger</span>
+                  </p>
+                  <div class="d-flex align-items-center">
                     <button
                       type="button"
-                      class="btn btn-light btn-sm px-2 gap-3"
+                      class="btn btn-dark btn-sm px-2 gap-3 me-2"
+                      disabled
                     >
-                      <a href="https://github.com/iqballm09" target="_blank">
+                      <a href="#" target="_blank">
                         <div class="d-sm-flex align-items-center text-center">
-                          <img
-                            class="me-2"
-                            src="./assets/icons/github.svg"
-                            height="15"
-                            alt="github"
-                          />GitHub
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="18"
+                            fill="currentColor"
+                            class="bi bi-github me-1"
+                            viewBox="0 0 16 16"
+                          >
+                            <path
+                              d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"
+                            />
+                          </svg>
+                          GitHub
+                        </div>
+                      </a>
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-primary btn-sm px-2 gap-3"
+                      disabled
+                    >
+                      <a href="#" target="_blank">
+                        <div class="d-sm-flex align-items-center text-center">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="17"
+                            height="17"
+                            fill="currentColor"
+                            class="bi bi-file-earmark"
+                            viewBox="0 0 16 16"
+                          >
+                            <path
+                              d="M14 4.5V14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h5.5zm-3 0A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V4.5z"
+                            />
+                          </svg>
+                          Paper
                         </div>
                       </a>
                     </button>
@@ -388,49 +435,57 @@
                 </div>
               </div>
             </div>
-            <div class="col">
-              <div class="card shadow-sm">
-                <svg
-                  class="bd-placeholder-img card-img-top"
-                  width="100%"
+            <div class="col" id="ezeats-proj">
+              <div class="card shadow-sm bg-body-tertiary">
+                <img
+                  src="./assets/images/ezeats-project.webp"
                   height="225"
-                  xmlns="http://www.w3.org/2000/svg"
-                  role="img"
-                  aria-label="Placeholder: Thumbnail"
-                  preserveAspectRatio="xMidYMid slice"
-                  focusable="false"
-                >
-                  <title>Placeholder</title>
-                  <rect width="100%" height="100%" fill="#55595c"></rect>
-                  <text x="50%" y="50%" fill="#eceeef" dy=".3em">
-                    Thumbnail
-                  </text>
-                </svg>
+                  alt="ezeats-project"
+                />
                 <div class="card-body">
                   <h5>EzEats</h5>
-                  <p class="card-text">
-                    This is a wider card with supporting text below as a natural
-                    lead-in to additional content. This content is a little bit
-                    longer.
+                  <p class="card-text justify-text">
+                    Team project on developing a website that can help users
+                    (foodhunters) can exchange information each other towards a
+                    restaurant.
                   </p>
                   <p class="card-text font-sm">
-                    Frameworks: Next.JS, Nest.JS, Hyperledger Fabric
+                    <span class="fw-bold">Role:</span>
+                    <span class="badge text-bg-success">
+                      Full Stack Developer
+                    </span>
+                  </p>
+                  <p class="card-text font-sm">
+                    <span class="fw-bold">Tech Stacks:</span>
+                    <span class="badge text-bg-info">PHP</span>
+                    <span class="badge text-bg-info">PostgreSQL</span>
+                    <span class="badge text-bg-info">Boostrap</span>
+                    <span class="badge text-bg-info">Javascript</span>
                   </p>
                   <div
                     class="d-flex justify-content-between align-items-center"
                   >
                     <button
                       type="button"
-                      class="btn btn-light btn-sm px-2 gap-3"
+                      class="btn btn-dark btn-sm px-2 gap-3"
                     >
-                      <a href="https://github.com/iqballm09" target="_blank">
+                      <a
+                        href="https://github.com/tifanee/rpl-ez"
+                        target="_blank"
+                      >
                         <div class="d-sm-flex align-items-center text-center">
-                          <img
-                            class="me-2"
-                            src="./assets/icons/github.svg"
-                            height="15"
-                            alt="github"
-                          />GitHub
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="18"
+                            fill="currentColor"
+                            class="bi bi-github me-1"
+                            viewBox="0 0 16 16"
+                          >
+                            <path
+                              d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"
+                            />
+                          </svg>
+                          GitHub
                         </div>
                       </a>
                     </button>
@@ -438,49 +493,57 @@
                 </div>
               </div>
             </div>
-            <div class="col">
-              <div class="card shadow-sm">
-                <svg
-                  class="bd-placeholder-img card-img-top"
-                  width="100%"
+            <div class="col" id="foodcourt-app">
+              <div class="card shadow-sm bg-body-tertiary">
+                <img
+                  class="card-img-top"
+                  src="./assets/images/foodcourt-app.webp"
                   height="225"
-                  xmlns="http://www.w3.org/2000/svg"
-                  role="img"
-                  aria-label="Placeholder: Thumbnail"
-                  preserveAspectRatio="xMidYMid slice"
-                  focusable="false"
-                >
-                  <title>Placeholder</title>
-                  <rect width="100%" height="100%" fill="#55595c"></rect>
-                  <text x="50%" y="50%" fill="#eceeef" dy=".3em">
-                    Thumbnail
-                  </text>
-                </svg>
+                  alt="personal-site"
+                />
                 <div class="card-body">
                   <h5>FoodCourt App</h5>
-                  <p class="card-text">
-                    This is a wider card with supporting text below as a natural
-                    lead-in to additional content. This content is a little bit
-                    longer.
+                  <p class="card-text justify-text">
+                    Team project on developing a mobile app for transaction
+                    recording, making transactions easier for both customers and
+                    merchants.
                   </p>
                   <p class="card-text font-sm">
-                    Frameworks: Next.JS, Nest.JS, Hyperledger Fabric
+                    <span class="fw-bold">Role:</span>
+                    <span class="badge text-bg-success"
+                      >Back End Developer</span
+                    >
+                  </p>
+                  <p class="card-text font-sm">
+                    <span class="fw-bold">Tech Stacks:</span>
+                    <span class="badge text-bg-info">Kotlin</span>
+                    <span class="badge text-bg-info">ExpressJS</span>
+                    <span class="badge text-bg-info">SQLite</span>
                   </p>
                   <div
                     class="d-flex justify-content-between align-items-center"
                   >
                     <button
                       type="button"
-                      class="btn btn-light btn-sm px-2 gap-3"
+                      class="btn btn-dark btn-sm px-2 gap-3"
                     >
-                      <a href="https://github.com/iqballm09" target="_blank">
+                      <a
+                        href="https://github.com/frhnfath/mppl-4"
+                        target="_blank"
+                      >
                         <div class="d-sm-flex align-items-center text-center">
-                          <img
-                            class="me-2"
-                            src="./assets/icons/github.svg"
-                            height="15"
-                            alt="github"
-                          />GitHub
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="18"
+                            fill="currentColor"
+                            class="bi bi-github me-1"
+                            viewBox="0 0 16 16"
+                          >
+                            <path
+                              d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"
+                            />
+                          </svg>
+                          GitHub
                         </div>
                       </a>
                     </button>
@@ -488,49 +551,51 @@
                 </div>
               </div>
             </div>
-            <div class="col">
-              <div class="card shadow-sm">
-                <svg
-                  class="bd-placeholder-img card-img-top"
-                  width="100%"
+            <div class="col" id="personal-site">
+              <div class="card shadow-sm bg-body-tertiary">
+                <img
+                  class="card-img-top"
+                  src="./assets/images/personal-site.webp"
                   height="225"
-                  xmlns="http://www.w3.org/2000/svg"
-                  role="img"
-                  aria-label="Placeholder: Thumbnail"
-                  preserveAspectRatio="xMidYMid slice"
-                  focusable="false"
-                >
-                  <title>Placeholder</title>
-                  <rect width="100%" height="100%" fill="#55595c"></rect>
-                  <text x="50%" y="50%" fill="#eceeef" dy=".3em">
-                    Thumbnail
-                  </text>
-                </svg>
+                  alt="personal-site"
+                />
                 <div class="card-body">
-                  <h5>Personal Site</h5>
-                  <p class="card-text">
-                    This is a wider card with supporting text below as a natural
-                    lead-in to additional content. This content is a little bit
-                    longer.
+                  <h5>Capstone Project #2: Personal Site</h5>
+                  <p class="card-text justify-text">
+                    Capstone Project #2: Personal Site from the Fullstack Web
+                    Development AppBrewery Udemy Course.
                   </p>
                   <p class="card-text font-sm">
-                    Frameworks: Next.JS, Nest.JS, Hyperledger Fabric
+                    <span class="fw-bold">Tech Stacks:</span>
+                    <span class="badge text-bg-info">HTML</span>
+                    <span class="badge text-bg-info">CSS</span>
+                    <span class="badge text-bg-info">Javascript</span>
+                    <span class="badge text-bg-info">Bootstrap</span>
                   </p>
                   <div
                     class="d-flex justify-content-between align-items-center"
                   >
                     <button
                       type="button"
-                      class="btn btn-light btn-sm px-2 gap-3"
+                      class="btn btn-dark btn-sm px-2 gap-3"
                     >
-                      <a href="https://github.com/iqballm09" target="_blank">
+                      <a
+                        href="https://github.com/iqballm09/personal-site"
+                        target="_blank"
+                      >
                         <div class="d-sm-flex align-items-center text-center">
-                          <img
-                            class="me-2"
-                            src="./assets/icons/github.svg"
-                            height="15"
-                            alt="github"
-                          />GitHub
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="18"
+                            fill="currentColor"
+                            class="bi bi-github me-1"
+                            viewBox="0 0 16 16"
+                          >
+                            <path
+                              d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"
+                            />
+                          </svg>
+                          GitHub
                         </div>
                       </a>
                     </button>
@@ -545,30 +610,21 @@
     <section id="footer">
       <div class="container">
         <footer
-          class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top"
+          class="d-flex flex-wrap justify-content-between align-items-center py-3 mt-4 border-top"
         >
           <div class="col-md-4 d-flex align-items-center">
-            <a
-              href="/"
-              class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1"
-            >
+            <a href="/" class="mb-3 me-2 mb-md-0 text-decoration-none lh-1">
               <svg class="bi" width="30" height="24">
                 <use xlink:href="#bootstrap"></use>
               </svg>
             </a>
-            <span class="mb-3 mb-md-0 text-body-secondary"
-              >© 2024 Muhammad Iqbal</span
-            >
+            <span class="mb-3 mb-md-0">© 2024 Muhammad Iqbal</span>
           </div>
           <div class="d-flex flex-nowrap">
             <p>Contact Me:</p>
             <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
               <li class="ms-3">
-                <a
-                  class="text-body-secondary"
-                  href="https://www.instagram.com/iqball.m09/"
-                  target="_blank"
-                >
+                <a href="https://www.instagram.com/iqball.m09/" target="_blank">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="16"
@@ -585,7 +641,6 @@
               </li>
               <li class="ms-3">
                 <a
-                  class="text-body-secondary"
                   href="https://www.linkedin.com/in/mhdiqbal09/"
                   target="_blank"
                   ><svg
@@ -603,11 +658,7 @@
                 </a>
               </li>
               <li class="ms-3">
-                <a
-                  class="text-body-secondary"
-                  href="mailto:mh.iqbal899@gmail.com"
-                  target="_blank"
-                >
+                <a href="mailto:mh.iqbal899@gmail.com" target="_blank">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="16"
@@ -626,10 +677,14 @@
                 </a>
               </li>
               <li class="ms-3">
-                <a class="text-body-secondary" href="#" target="_blank">
+                <a
+                  href="https://iqballm09.github.io/personal-site/"
+                  target="_blank"
+                >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="16"
+                    s
                     height="16"
                     fill="currentColor"
                     class="bi bi-globe"

@@ -4,19 +4,38 @@
   background-position: center;
 }
 
+body {
+  background-color: #e3fdfd;
+}
+
 button > a {
   text-decoration: none;
   color: inherit;
 }
 
-p > span {
-  color: brown;
-}
-
-.font-sms {
+.font-sm {
   font-size: 0.8rem;
 }
 
-#about-me {
+.justify-text {
   text-align: justify;
 }
+
+.navbar {
+  background-color: #023859;
+  color: #e3fdfd;
+}
+
+#footer {
+  background-color: #023859;
+  color: #e3fdfd;
+}
+
+#navbarNavDropdown ul li a {
+  color: #e3fdfd;
+}
+
+#header-site-color {
+  color: #e3fdfd;
+}
+
