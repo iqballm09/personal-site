@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Iqbal's Personal Site</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <section id="navbar">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <div class="ms-3">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="30"
+              fill="currentColor"
+              class="bi bi-github"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"
+              />
+            </svg>
+          </div>
+          <button
+            class="navbar-toggler me-3"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-start justify-content-lg-end"
+            id="navbarNavDropdown"
+          >
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#about-me">About Me</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#skills">Skills</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#certifications">Certifications</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#projects">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#footer">Contact Me</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </section>
+
+    <section id="header-site">
+      <div class="px-4 py-5 text-center">
+        <img
+          class="d-block mx-auto mb-4 rounded-circle"
+          src="./assets/images/profile picture.jpg"
+          alt="profile-picture"
+          width="150"
+          height="150"
+        />
+        <h1 class="display-5 fw-bold text-light">Muhammad Iqbal</h1>
+        <div class="col-lg-6 mx-auto">
+          <p class="lead mb-4 text-light fs-3">Fullstack Developer</p>
+          <div class="d-grid gap-3 mb-4 d-sm-flex justify-content-sm-center">
+            <button type="button" class="btn btn-light btn-lg px-4 gap-3">
+              <a href="https://github.com/iqballm09" target="_blank">
+                <div class="d-sm-flex align-items-center text-center">
+                  <img
+                    class="me-2"
+                    src="./assets/icons/github.svg"
+                    height="25"
+                    alt="github"
+                  />GitHub
+                </div>
+              </a>
+            </button>
+            <button
+              type="button"
+              class="btn btn-outline-light btn-lg px-4 gap-3"
+            >
+              <a
+                href="https://drive.google.com/file/d/1YjoBZI4FarFy0RqM1RFNCRq5AjnPdk1t/view?usp=sharing"
+                target="_blank"
+              >
+                <div class="d-sm-flex align-items-center text-center">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="25"
+                    height="25"
+                    fill="currentColor"
+                    class="bi bi-file-earmark-pdf"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2M9.5 3A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h5.5z"
+                    ></path>
+                    <path
+                      d="M4.603 14.087a.8.8 0 0 1-.438-.42c-.195-.388-.13-.776.08-1.102.198-.307.526-.568.897-.787a7.7 7.7 0 0 1 1.482-.645 20 20 0 0 0 1.062-2.227 7.3 7.3 0 0 1-.43-1.295c-.086-.4-.119-.796-.046-1.136.075-.354.274-.672.65-.823.192-.077.4-.12.602-.077a.7.7 0 0 1 .477.365c.088.164.12.356.127.538.007.188-.012.396-.047.614-.084.51-.27 1.134-.52 1.794a11 11 0 0 0 .98 1.686 5.8 5.8 0 0 1 1.334.05c.364.066.734.195.96.465.12.144.193.32.2.518.007.192-.047.382-.138.563a1.04 1.04 0 0 1-.354.416.86.86 0 0 1-.51.138c-.331-.014-.654-.196-.933-.417a5.7 5.7 0 0 1-.911-.95 11.7 11.7 0 0 0-1.997.406 11.3 11.3 0 0 1-1.02 1.51c-.292.35-.609.656-.927.787a.8.8 0 0 1-.58.029m1.379-1.901q-.25.115-.459.238c-.328.194-.541.383-.647.547-.094.145-.096.25-.04.361q.016.032.026.044l.035-.012c.137-.056.355-.235.635-.572a8 8 0 0 0 .45-.606m1.64-1.33a13 13 0 0 1 1.01-.193 12 12 0 0 1-.51-.858 21 21 0 0 1-.5 1.05zm2.446.45q.226.245.435.41c.24.19.407.253.498.256a.1.1 0 0 0 .07-.015.3.3 0 0 0 .094-.125.44.44 0 0 0 .059-.2.1.1 0 0 0-.026-.063c-.052-.062-.2-.152-.518-.209a4 4 0 0 0-.612-.053zM8.078 7.8a7 7 0 0 0 .2-.828q.046-.282.038-.465a.6.6 0 0 0-.032-.198.5.5 0 0 0-.145.04c-.087.035-.158.106-.196.283-.04.192-.03.469.046.822q.036.167.09.346z"
+                    ></path>
+                  </svg>
+                  Resume or CV
+                </div>
+              </a>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="quote">
+      <div class="container my-5">
+        <div class="p-5 text-center bg-body-tertiary rounded-4">
+          <blockquote class="blockquote">
+            <p>
+              <em
+                ><q>The only true wisdom is in knowing you know nothing.</q></em
+              >
+              - <span>Socrates</span>
+            </p>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <section id="about-me" class="bg-body-tertiary">
+      <div class="container col-xxl-8 px-4 py-5">
+        <h2 class="pb-2 border-bottom">About Me</h2>
+        <div class="row flex-lg-row-reverse align-items-start g-5 py-4">
+          <div class="col-10 col-sm-8 col-lg-5">
+            <img
+              src="./assets/images/about-me.jpg"
+              class="d-block mx-lg-auto img-fluid"
+              alt="about-me"
+              width="250"
+              loading="lazy"
+            />
+          </div>
+          <div class="col-lg-7">
+            <p class="lead fs-6 text-justify">
+              Muhammad Iqbal was born in Bukittinggi on September 11, 1999. He
+              is a learner who has a passion for learning new stuffs related to
+              IT, ranging from Data Analytics, Machine Learning, Software
+              Enginneering, to Blockchain Techology. Currently, he is focusing
+              on Software Engineering and Blockchain field.
+            </p>
+            <p class="lead fs-6">
+              He studied Computer Science at Institut Pertanian Bogor (IPB)
+              starting on August 2019 and graduated with cum laude honors on
+              November 2023. His thesis on the field of machine learning was
+              titled "Image-Based Modeling of Rubber Plant Disease Severity
+              Multispectral Drone Image Using Random Forest Algorithm". Before
+              studying at IPB, he took a gap year for 1 year and relocated to
+              Kampung Inggris Pare, Kediri, East Java for learning english and
+              preparing entrance exam. Besides coding, he has hobbies such as
+              playing game, reading manga and novels.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <div class="container px-4 pt-5" id="icon-grid">
+        <h2 class="pb-2 border-bottom">Skills</h2>
+        <div
+          class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-3 g-4 py-5"
+        >
+          <div class="col d-flex align-items-start">
+            <img
+              class="me-2"
+              src="./assets/icons/front-end.png"
+              alt="front-end"
+              width="40"
+            />
+            <div>
+              <h4 class="fw-bold mb-0 fs-5 text-body-emphasis">
+                Front End Development
+              </h4>
+              <p>Frameworks: React.JS and Next.JS</p>
+            </div>
+          </div>
+          <div class="col d-flex align-items-start">
+            <img
+              class="me-2"
+              src="./assets/icons/back-end.png"
+              alt="back-end"
+              width="40"
+            />
+            <div>
+              <h4 class="fw-bold mb-0 fs-5 text-body-emphasis">
+                Back End Development
+              </h4>
+              <p>Frameworks: Nest.JS and Golang</p>
+            </div>
+          </div>
+          <div class="col d-flex align-items-start">
+            <img
+              class="me-2"
+              src="./assets/icons/blockchain.png"
+              alt="blockchain"
+              width="40"
+            />
+            <div>
+              <h4 class="fw-bold mb-0 fs-5 text-body-emphasis">Blockchain</h4>
+              <p>Framework: Hyperledger Fabric</p>
+            </div>
+          </div>
+          <div class="col d-flex align-items-start">
+            <img
+              class="me-2"
+              src="./assets/icons/analysis.png"
+              alt="analysis"
+              width="40"
+            />
+            <div>
+              <h4 class="fw-bold mb-0 fs-5 text-body-emphasis">
+                Data Analytics
+              </h4>
+              <p>
+                Fields: Data Visualization, Data Cleaning, Data Analysis, R
+                Programming
+              </p>
+            </div>
+          </div>
+          <div class="col d-flex align-items-start">
+            <img
+              class="me-2"
+              src="./assets/icons/machine-learning.png"
+              alt="machine-learning"
+              width="40"
+            />
+            <div>
+              <h4 class="fw-bold mb-0 fs-5 text-body-emphasis">
+                Machine Learning
+              </h4>
+              <p>
+                Fields: Linear Algebra, Supervised Machine Learning, Python
+                Programming
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="certifications" class="bg-body-tertiary">
+      <div class="container px-4 py-5">
+        <h2 class="pb-2 border-bottom mb-5">Certifications</h2>
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Field</th>
+              <th>Institution</th>
+              <th>Year</th>
+              <th>Link</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Google Data Analytics Specialization</td>
+              <td>Data Analytics</td>
+              <td>Google</td>
+              <td>2022</td>
+              <td>
+                <a
+                  href="https://www.coursera.org/account/accomplishments/specialization/certificate/JJR52LKQQLFG"
+                  target="_blank"
+                  >Link
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Supervised Machine Learning: Regression and Classification
+              </td>
+              <td>Machine Learning</td>
+              <td>DeepLearning.AI</td>
+              <td>2023</td>
+              <td>
+                <a
+                  href="https://www.coursera.org/account/accomplishments/certificate/4V24CBFX69U9"
+                  target="_blank"
+                  >Link</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>Mathematics for Machine Learning: Linear Algebra</td>
+              <td>Machine Learning</td>
+              <td>Imperial College London</td>
+              <td>2023</td>
+              <td>
+                <a
+                  href="https://www.coursera.org/account/accomplishments/certificate/DS2NUVQ869TG"
+                  target="_blank"
+                  >Link</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>Introduction to Git and Github</td>
+              <td>Software Engineering</td>
+              <td>Google</td>
+              <td>2023</td>
+              <td>
+                <a
+                  href="https://www.coursera.org/account/accomplishments/certificate/FYU9JAFDLGMZ"
+                  target="_blank"
+                  >Link</a
+                >
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="projects" class="bg-body-tertiary">
+      <div class="album">
+        <div class="container px-4 py-5">
+          <h2 class="pb-2 border-bottom">Projects</h2>
+          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 py-4">
+            <div class="col">
+              <div class="card shadow-sm">
+                <svg
+                  class="bd-placeholder-img card-img-top"
+                  width="100%"
+                  height="225"
+                  xmlns="http://www.w3.org/2000/svg"
+                  role="img"
+                  aria-label="Placeholder: Thumbnail"
+                  preserveAspectRatio="xMidYMid slice"
+                  focusable="false"
+                >
+                  <title>Placeholder</title>
+                  <rect width="100%" height="100%" fill="#55595c"></rect>
+                  <text x="50%" y="50%" fill="#eceeef" dy=".3em">
+                    Thumbnail
+                  </text>
+                </svg>
+                <div class="card-body">
+                  <h5>INSWChain</h5>
+                  <p class="card-text">
+                    This is a wider card with supporting text below as a natural
+                    lead-in to additional content. This content is a little bit
+                    longer.
+                  </p>
+                  <p class="card-text font-sm">
+                    Frameworks: Next.JS, Nest.JS, Hyperledger Fabric
+                  </p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <button
+                      type="button"
+                      class="btn btn-light btn-sm px-2 gap-3"
+                    >
+                      <a href="https://github.com/iqballm09" target="_blank">
+                        <div class="d-sm-flex align-items-center text-center">
+                          <img
+                            class="me-2"
+                            src="./assets/icons/github.svg"
+                            height="15"
+                            alt="github"
+                          />GitHub
+                        </div>
+                      </a>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm">
+                <svg
+                  class="bd-placeholder-img card-img-top"
+                  width="100%"
+                  height="225"
+                  xmlns="http://www.w3.org/2000/svg"
+                  role="img"
+                  aria-label="Placeholder: Thumbnail"
+                  preserveAspectRatio="xMidYMid slice"
+                  focusable="false"
+                >
+                  <title>Placeholder</title>
+                  <rect width="100%" height="100%" fill="#55595c"></rect>
+                  <text x="50%" y="50%" fill="#eceeef" dy=".3em">
+                    Thumbnail
+                  </text>
+                </svg>
+                <div class="card-body">
+                  <h5>EzEats</h5>
+                  <p class="card-text">
+                    This is a wider card with supporting text below as a natural
+                    lead-in to additional content. This content is a little bit
+                    longer.
+                  </p>
+                  <p class="card-text font-sm">
+                    Frameworks: Next.JS, Nest.JS, Hyperledger Fabric
+                  </p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <button
+                      type="button"
+                      class="btn btn-light btn-sm px-2 gap-3"
+                    >
+                      <a href="https://github.com/iqballm09" target="_blank">
+                        <div class="d-sm-flex align-items-center text-center">
+                          <img
+                            class="me-2"
+                            src="./assets/icons/github.svg"
+                            height="15"
+                            alt="github"
+                          />GitHub
+                        </div>
+                      </a>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm">
+                <svg
+                  class="bd-placeholder-img card-img-top"
+                  width="100%"
+                  height="225"
+                  xmlns="http://www.w3.org/2000/svg"
+                  role="img"
+                  aria-label="Placeholder: Thumbnail"
+                  preserveAspectRatio="xMidYMid slice"
+                  focusable="false"
+                >
+                  <title>Placeholder</title>
+                  <rect width="100%" height="100%" fill="#55595c"></rect>
+                  <text x="50%" y="50%" fill="#eceeef" dy=".3em">
+                    Thumbnail
+                  </text>
+                </svg>
+                <div class="card-body">
+                  <h5>FoodCourt App</h5>
+                  <p class="card-text">
+                    This is a wider card with supporting text below as a natural
+                    lead-in to additional content. This content is a little bit
+                    longer.
+                  </p>
+                  <p class="card-text font-sm">
+                    Frameworks: Next.JS, Nest.JS, Hyperledger Fabric
+                  </p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <button
+                      type="button"
+                      class="btn btn-light btn-sm px-2 gap-3"
+                    >
+                      <a href="https://github.com/iqballm09" target="_blank">
+                        <div class="d-sm-flex align-items-center text-center">
+                          <img
+                            class="me-2"
+                            src="./assets/icons/github.svg"
+                            height="15"
+                            alt="github"
+                          />GitHub
+                        </div>
+                      </a>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm">
+                <svg
+                  class="bd-placeholder-img card-img-top"
+                  width="100%"
+                  height="225"
+                  xmlns="http://www.w3.org/2000/svg"
+                  role="img"
+                  aria-label="Placeholder: Thumbnail"
+                  preserveAspectRatio="xMidYMid slice"
+                  focusable="false"
+                >
+                  <title>Placeholder</title>
+                  <rect width="100%" height="100%" fill="#55595c"></rect>
+                  <text x="50%" y="50%" fill="#eceeef" dy=".3em">
+                    Thumbnail
+                  </text>
+                </svg>
+                <div class="card-body">
+                  <h5>Personal Site</h5>
+                  <p class="card-text">
+                    This is a wider card with supporting text below as a natural
+                    lead-in to additional content. This content is a little bit
+                    longer.
+                  </p>
+                  <p class="card-text font-sm">
+                    Frameworks: Next.JS, Nest.JS, Hyperledger Fabric
+                  </p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <button
+                      type="button"
+                      class="btn btn-light btn-sm px-2 gap-3"
+                    >
+                      <a href="https://github.com/iqballm09" target="_blank">
+                        <div class="d-sm-flex align-items-center text-center">
+                          <img
+                            class="me-2"
+                            src="./assets/icons/github.svg"
+                            height="15"
+                            alt="github"
+                          />GitHub
+                        </div>
+                      </a>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="footer">
+      <div class="container">
+        <footer
+          class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top"
+        >
+          <div class="col-md-4 d-flex align-items-center">
+            <a
+              href="/"
+              class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1"
+            >
+              <svg class="bi" width="30" height="24">
+                <use xlink:href="#bootstrap"></use>
+              </svg>
+            </a>
+            <span class="mb-3 mb-md-0 text-body-secondary"
+              >© 2024 Muhammad Iqbal</span
+            >
+          </div>
+          <div class="d-flex flex-nowrap">
+            <p>Contact Me:</p>
+            <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+              <li class="ms-3">
+                <a
+                  class="text-body-secondary"
+                  href="https://www.instagram.com/iqball.m09/"
+                  target="_blank"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-instagram"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"
+                    />
+                  </svg>
+                </a>
+              </li>
+              <li class="ms-3">
+                <a
+                  class="text-body-secondary"
+                  href="https://www.linkedin.com/in/mhdiqbal09/"
+                  target="_blank"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-linkedin"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"
+                    />
+                  </svg>
+                </a>
+              </li>
+              <li class="ms-3">
+                <a
+                  class="text-body-secondary"
+                  href="mailto:mh.iqbal899@gmail.com"
+                  target="_blank"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-envelope-at"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M2 2a2 2 0 0 0-2 2v8.01A2 2 0 0 0 2 14h5.5a.5.5 0 0 0 0-1H2a1 1 0 0 1-.966-.741l5.64-3.471L8 9.583l7-4.2V8.5a.5.5 0 0 0 1 0V4a2 2 0 0 0-2-2zm3.708 6.208L1 11.105V5.383zM1 4.217V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v.217l-7 4.2z"
+                    />
+                    <path
+                      d="M14.247 14.269c1.01 0 1.587-.857 1.587-2.025v-.21C15.834 10.43 14.64 9 12.52 9h-.035C10.42 9 9 10.36 9 12.432v.214C9 14.82 10.438 16 12.358 16h.044c.594 0 1.018-.074 1.237-.175v-.73c-.245.11-.673.18-1.18.18h-.044c-1.334 0-2.571-.788-2.571-2.655v-.157c0-1.657 1.058-2.724 2.64-2.724h.04c1.535 0 2.484 1.05 2.484 2.326v.118c0 .975-.324 1.39-.639 1.39-.232 0-.41-.148-.41-.42v-2.19h-.906v.569h-.03c-.084-.298-.368-.63-.954-.63-.778 0-1.259.555-1.259 1.4v.528c0 .892.49 1.434 1.26 1.434.471 0 .896-.227 1.014-.643h.043c.118.42.617.648 1.12.648m-2.453-1.588v-.227c0-.546.227-.791.573-.791.297 0 .572.192.572.708v.367c0 .573-.253.744-.564.744-.354 0-.581-.215-.581-.8Z"
+                    />
+                  </svg>
+                </a>
+              </li>
+              <li class="ms-3">
+                <a class="text-body-secondary" href="#" target="_blank">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-globe"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m7.5-6.923c-.67.204-1.335.82-1.887 1.855A8 8 0 0 0 5.145 4H7.5zM4.09 4a9.3 9.3 0 0 1 .64-1.539 7 7 0 0 1 .597-.933A7.03 7.03 0 0 0 2.255 4zm-.582 3.5c.03-.877.138-1.718.312-2.5H1.674a7 7 0 0 0-.656 2.5zM4.847 5a12.5 12.5 0 0 0-.338 2.5H7.5V5zM8.5 5v2.5h2.99a12.5 12.5 0 0 0-.337-2.5zM4.51 8.5a12.5 12.5 0 0 0 .337 2.5H7.5V8.5zm3.99 0V11h2.653c.187-.765.306-1.608.338-2.5zM5.145 12q.208.58.468 1.068c.552 1.035 1.218 1.65 1.887 1.855V12zm.182 2.472a7 7 0 0 1-.597-.933A9.3 9.3 0 0 1 4.09 12H2.255a7 7 0 0 0 3.072 2.472M3.82 11a13.7 13.7 0 0 1-.312-2.5h-2.49c.062.89.291 1.733.656 2.5zm6.853 3.472A7 7 0 0 0 13.745 12H11.91a9.3 9.3 0 0 1-.64 1.539 7 7 0 0 1-.597.933M8.5 12v2.923c.67-.204 1.335-.82 1.887-1.855q.26-.487.468-1.068zm3.68-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.7 13.7 0 0 1-.312 2.5m2.802-3.5a7 7 0 0 0-.656-2.5H12.18c.174.782.282 1.623.312 2.5zM11.27 2.461c.247.464.462.98.64 1.539h1.835a7 7 0 0 0-3.072-2.472c.218.284.418.598.597.933M10.855 4a8 8 0 0 0-.468-1.068C9.835 1.897 9.17 1.282 8.5 1.077V4z"
+                    />
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </footer>
+      </div>
+    </section>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

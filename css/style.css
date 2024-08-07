@@ -1,0 +1,22 @@
+#header-site {
+  background-image: url("../assets/images/background.png");
+  background-size: cover;
+  background-position: center;
+}
+
+button > a {
+  text-decoration: none;
+  color: inherit;
+}
+
+p > span {
+  color: brown;
+}
+
+.font-sms {
+  font-size: 0.8rem;
+}
+
+#about-me {
+  text-align: justify;
+}
